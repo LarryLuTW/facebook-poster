@@ -1,0 +1,24 @@
+{
+  "name": "facebook-robot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^6.0.45",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-sourcemaps": "^2.0.0",
+    "gulp-typescript": "^3.0.2",
+    "typescript": "^2.0.3"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.75.0",
+    "source-map-support": "^0.4.3"
+  }
+}
