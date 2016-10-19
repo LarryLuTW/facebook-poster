@@ -1,4 +1,4 @@
-Facebook-Poster is a api that automate post functionalities on facebook. This api do this by simulating the browser. Facebook will assume you are a real user if you use this api to write some post. This project is fledgling. Feel free to open a issue when you get some error or find anywhere can be better. Besides, if you think this project is interesting, please give me a star. Thanks.
+Facebook-Poster is an api that automate post functionalities on facebook. This api do this by simulating the browser. If you use this api to write some post, facebook will assume you are a real user. This project is fledgling. Feel free to open a issue when you get some error or find anywhere can be better. Besides, if you think this project is interesting, please give me a star. Thanks.
 
 # Quick Start Guide
 
