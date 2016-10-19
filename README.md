@@ -49,6 +49,8 @@ __Arguments__
 * `email`: your facebook email.
 * `password`: your facebook password.
 
+---
+
 ### api.post({ content, privacy }, callback(err))
 
 __Arguments__
@@ -56,6 +58,8 @@ write a post
 
 * `content`: post content.
 * `privacy`: "private", "friends" or "public".
+
+---
 
 # License
 
