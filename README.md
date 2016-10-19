@@ -14,8 +14,6 @@ npm install Larry850806/facebook-poster
 
 ##  Usage
 
-### Post
-
 ```javascript
 var login = require('facebook-poster');
 
@@ -40,6 +38,24 @@ login(user, function(err, api){
 ```
 
 ![](http://i.imgur.com/MSlhdHC.png)
+
+## Documentation
+
+### login({ email, password }, callback(err, api))
+login and get api
+
+__Arguments__
+
+* `email`: your facebook email.
+* `password`: your facebook password.
+
+### api.post({ content, privacy }, callback(err))
+
+__Arguments__
+write a post
+
+* `content`: post content.
+* `privacy`: "private", "friends" or "public".
 
 # License
 
