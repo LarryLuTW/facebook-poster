@@ -37,6 +37,8 @@ login(user, function(err, api){
 
 ![](http://i.imgur.com/MSlhdHC.png)
 
+---
+
 ## Documentation
 
 ### login({ email, password }, callback(err, api))
