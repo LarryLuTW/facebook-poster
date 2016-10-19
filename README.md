@@ -1,74 +1,45 @@
-This is a facebook chat bot you can easily customize the response. I will publish a new version recently. If you think this project is interesting, please give me a star. Thanks.
+Facebook-Poster is a api that automate post functionalities on facebook. This api do this by simulating the browser. Facebook will assume you are a real user if you use this api to write some post. This project is fledgling. Feel free to open a issue when you get some error or find anywhere can be better. Besides, if you think this project is interesting, please give me a star. Thanks.
 
 # Quick Start Guide
 
 ## Requirement
 
-- node >= 4.4.1
+- node >= 4.3.2
 
 ## Install
 
 ```bash
-git clone https://github.com/Larry850806/facebook-chat-bot.git
-cd facebook-chat-bot
-npm install
+npm install Larry850806/facebook-poster
 ```
 
 ##  Usage
 
-### Start chat bot
-
-- step1: modify `index.js` and change userInfo to your own email and password.
+### Post
 
 ```javascript
-var userInfo = {
-    email: 'Your_Email@test.com',
-    password: 'Your_Password'
-}
+var login = require('facebook-poster');
+
+var user = {
+    email: 'YOUR_EMAIL',
+    password: 'YOUR_PASSWORD'
+};
+
+login(user, function(err, api){
+    if(err) console.log(err);
+
+    var newPost = {
+        content: 'Hello World\nThis is pudding dog',
+        privacy: 'private'
+    }
+
+    api.post(newPost, function(err){
+        if(err) console.log(err);
+        console.log('post success');
+    });
+});
 ```
 
-- step2: start chat bot
-
-```bash
-npm start
-```
-
-##  How to customize your bot
-
-### customize the response
-
-modify the file `database/respond.json`.<br>
-The bot will find the "keyword" and make response.
-```json
-{
-    "hello": "Hello ~ I'm Pudding Dog",
-    
-    "ya": "YAAAAA~~",
-    
-    "apple": "apple is good"
-}
-```
-<img src="http://imgur.com/bnmWWkm.png">
-
-
-### customize the default message
-modify the arr in `database/question.json`.<br>
-```json
-[
-    "Hello",
-    "Ya",
-    "I love apple"
-]
-```
-<img src="http://imgur.com/JfLi0Lj.png">
-
-## How to stop the chat bot
-
-Just terminate the process or say "/stop" to the bot on facebook.<br>
-<img src="http://imgur.com/kAiqPAF.png">
-
-
-
+![](http://i.imgur.com/MSlhdHC.png)
 
 # License
 
