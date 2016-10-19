@@ -52,9 +52,9 @@ __Arguments__
 ---
 
 ### api.post({ content, privacy }, callback(err))
+write a post
 
 __Arguments__
-write a post
 
 * `content`: post content.
 * `privacy`: "private", "friends" or "public".
