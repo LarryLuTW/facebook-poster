@@ -1,2 +1,0 @@
-- login with cookie
-- post to other
