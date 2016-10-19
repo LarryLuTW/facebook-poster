@@ -7,7 +7,7 @@ Facebook-Poster is an api that automate post functionalities on facebook. This a
 ## Install
 
 ```bash
-npm install Larry850806/facebook-poster
+npm install facebook-poster --save
 ```
 
 ##  Usage
