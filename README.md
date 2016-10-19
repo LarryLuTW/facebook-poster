@@ -8,58 +8,58 @@ This is a facebook chat bot you can easily customize the response. I will publis
 
 ## Install
 
-Requirementbash
+```bash
 git clone https://github.com/Larry850806/facebook-chat-bot.git
 cd facebook-chat-bot
 npm install
-bot
+```
 
 ##  Usage
 
 ### Start chat bot
 
-- step1: modify modifyindex.js and change userInfo to your own email and password.
+- step1: modify `index.js` and change userInfo to your own email and password.
 
-emailjavascript
+```javascript
 var userInfo = {
-email: 'Your_Email@test.com',
-       password: 'Your_Password'
+    email: 'Your_Email@test.com',
+    password: 'Your_Password'
 }
-com
+```
 
 - step2: start chat bot
 
-startbash
+```bash
 npm start
-startbash
+```
 
 ##  How to customize your bot
 
 ### customize the response
 
-modify the file filedatabase/respond.json.<br>
+modify the file `database/respond.json`.<br>
 The bot will find the "keyword" and make response.
-andjson
+```json
 {
     "hello": "Hello ~ I'm Pudding Dog",
-
+    
     "ya": "YAAAAA~~",
-
+    
     "apple": "apple is good"
 }
-apple
+```
 <img src="http://imgur.com/bnmWWkm.png">
 
 
 ### customize the default message
-modify the arr in indatabase/question.json.<br>
-questionjson
+modify the arr in `database/question.json`.<br>
+```json
 [
     "Hello",
     "Ya",
     "I love apple"
 ]
-Ya
+```
 <img src="http://imgur.com/JfLi0Lj.png">
 
 ## How to stop the chat bot
@@ -68,26 +68,28 @@ Just terminate the process or say "/stop" to the bot on facebook.<br>
 <img src="http://imgur.com/kAiqPAF.png">
 
 
+
+
 # License
 
 The MIT License (MIT)
 
-    Copyright (c) 2016 Larry Lu
+Copyright (c) 2016 Larry Lu
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
