@@ -63,6 +63,7 @@ __Arguments__
 
 ## To Do
 
+- post in fan page
 - save the session after login
 - post to other people
 
