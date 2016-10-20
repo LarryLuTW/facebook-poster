@@ -1,18 +1,18 @@
-[繁體中文](./README-CN.md)
+[English](./README.md)
 
-Facebook-Poster is an api that automate post functionalities on facebook. This api do this by simulating the browser. Using this api, facebook will assume you are a real user. Besides, This project is fledgling. Feel free to open a issue if you get some error or find anywhere can be better. If you think this project is interesting, please give me a star. Thanks.
+Facebook-Poster 是一個可以自動在 Facebook 上發文的 api，這個 api 透過模擬瀏覽器來做到這件事，如果你用這個 api 進行發文的話 Facebook 會以為你是真的上線去發文。此外，這個專案目前才剛起步，如果有遇到任何錯誤或是覺得哪裡可以更好，請不吝嗇告訴我，如果你覺得這個專案很有趣，請給我一顆星星，謝謝。
 
-## Requirement
+## 需求
 
 - node >= 4.3.2
 
-## Install
+## 安裝
 
 ```bash
 npm install facebook-poster --save
 ```
 
-## Usage
+## 如何使用
 
 ```javascript
 var login = require('facebook-poster');
@@ -41,32 +41,27 @@ login(user, function(err, api){
 
 ---
 
-## Documentation
+## 文件
 
 ### login({ email, password }, callback(err, api))
-login and get api
+登入並拿到 api
 
-__Arguments__
+__參數__
 
-* `email`: your facebook email.
-* `password`: your facebook password.
+* `email`: 你的信箱
+* `password`: 你的密碼
 
 ---
 
 ### api.post({ content, privacy }, callback(err))
-write a post
+發表新貼文
 
-__Arguments__
+__參數__
 
-* `content`: post content.
-* `privacy`: "private", "friends" or "public".
+* `content`: 貼文內容
+* `privacy`: "private" 、 "friends" 或 "public".
 
 ---
-
-## To Do
-
-- save the session after login
-- post to other people
 
 # License
 
