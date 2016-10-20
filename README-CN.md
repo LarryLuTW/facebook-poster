@@ -12,6 +12,7 @@ Facebook-Poster 是一個可以自動在 Facebook 上發文的 api，這個 api 
 
 ```bash
 npm install facebook-poster --save
+# yarn add facebook-poster
 ```
 
 ## 如何使用
