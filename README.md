@@ -56,7 +56,7 @@ __Arguments__
 ---
 
 ### api.post({ content, privacy }, callback(err))
-write a post
+publish a post
 
 __Arguments__
 
