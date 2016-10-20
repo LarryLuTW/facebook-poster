@@ -1,5 +1,7 @@
 [繁體中文](./README-CN.md)
 
+# Facebook Poster
+
 Facebook-Poster is an api that automate post functionalities on facebook. This api do this by simulating the browser. Using this api, facebook will assume you are a real user. Besides, This project is fledgling. Feel free to open a issue if you get some error or find anywhere can be better. If you think this project is interesting, please give me a star. Thanks.
 
 ## Requirement
